@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- saved from url=(0174)https://savvyy.in/web-pixels@5bfe654aw9a31df99pb879ff13m3bd6cd49/custom/web-pixel-164888868@1/sandbox/modern/?srsltid=AfmBOoobqO76iTjCEl0nWu_xvB-QCNRLQWv-VSggjdiSBw2d66GfyV8u -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Savvyy – India’s Best Lingerie Brand for Comfort &amp; Style</title>
+    <script src="./s5bfe654aw9a31df99pb879ff13m3bd6cd49m.js"></script>
+
+    <script type="text/javascript">
+  (function(shopify) {shopify.extend('WebPixel::Render', function(api) {
+var analytics=api.analytics,browser=api.browser,init=api.init;
+
+// Step 1. Initialize the JavaScript pixel SDK (make sure to exclude HTML)
+
+
+// Step 2. Subscribe to customer events with analytics.subscribe(), and add tracking
+//  analytics.subscribe("all_standard_events", function (event) {
+//    console.log("Event data ", event?.data);
+//  });
+// Step 1. Initialize the JavaScript pixel SDK (make sure to exclude HTML)
+
+
+// Step 2. Subscribe to customer events with analytics.subscribe(), and add tracking
+//  analytics.subscribe("event_name", event => {
+//    pixel("track", "event_name", event.data);
+//  });
+const script = document.createElement('script');
+script.setAttribute('src', 'https://www.googletagmanager.com/gtag/js?id=AW-11475620963');
+script.setAttribute('async', '');
+document.head.appendChild(script);
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-11475620963');
+
+
+
+analytics.subscribe("checkout_completed", (event) => {
+  gtag('event', 'conversion', {
+      'send_to': 'AW-11475620963/9me9CK-WqM8aEOOogOAq',
+      'value': event.data.checkout.totalPrice.amount,
+      'transaction_id': event.data.checkout.order.id,
+      'currency': event.data.checkout.currencyCode
+  });
+});
+});})(self.webPixelsManager.createShopifyExtend('164888868', 'custom'));
+
+</script>
+
+  <script src="./js(5)" async=""></script><script type="text/javascript" async="" src="./f(2).txt"></script></head>
+  <body>
+
+</body></html>
